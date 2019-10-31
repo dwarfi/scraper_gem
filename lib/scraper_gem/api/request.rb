@@ -38,7 +38,7 @@
        end
 
        def path
-         '/emas'
+         '/predict_prices'
        end
      end
    end

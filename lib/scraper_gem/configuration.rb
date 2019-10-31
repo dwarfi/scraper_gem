@@ -11,15 +11,15 @@ require 'singleton'
      end
 
      def open_timeout
-       Float(@open_timeout ||= 30.0)
+       Float(@open_timeout ||= 60.0)
      end
 
      def read_timeout
-       Float(@read_timeout ||= 30.0)
+       Float(@read_timeout ||= 60.0)
      end
 
      def connection_pool_size
-       Integer(@connection_pool_size ||= 10)
+       Integer(@connection_pool_size ||= 15)
      end
 
      def connection_pool_timeout
