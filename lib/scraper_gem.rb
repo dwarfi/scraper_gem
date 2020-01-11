@@ -1,5 +1,6 @@
 require "scraper_gem/version"
 require "scraper_gem/scraper"
+require "scraper_gem/emas"
 require "scraper_gem/api"
 require "scraper_gem/configuration"
 
