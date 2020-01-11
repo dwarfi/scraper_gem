@@ -3,11 +3,11 @@
      class Request
        ApiError = Class.new(StandardError)
 
-       attr_reader :params
-       private :params
+       attr_reader :path, :params
+       private :path, :params
 
-       def initialize(params={})
-         @params = params
+       def initialize(path, params={})
+         @path, @params = path, params
        end
 
        def parsed_response
@@ -35,10 +35,6 @@
 
        def config
          Configuration.instance
-       end
-
-       def path
-         '/predict_prices'
        end
      end
    end
